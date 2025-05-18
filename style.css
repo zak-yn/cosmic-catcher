@@ -1,0 +1,66 @@
+body {
+    font-family: 'Orbitron', 'Arial', sans-serif; /* Orbitron is a nice sci-fi font, add <link> in HTML */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000011; /* Dark space blue/black */
+    color: #e0e0e0; /* Light gray/white for text */
+}
+
+.game-container {
+    text-align: center;
+    background-color: #1a1a2e; /* Darker panel color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(70, 130, 180, 0.5); /* Steel blue glow */
+    border: 1px solid #4682b4; /* Steel blue border */
+}
+
+#gameCanvas {
+    border: 2px solid #4682b4; /* Steel blue */
+    /* Background will be drawn dynamically in JS */
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #add8e6; /* Light blue for info text */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #32cd32; /* Lime Green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #28a428;
+}
+
+#gameOverScreen {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+#gameOverScreen h2 {
+    color: #ff4500; /* OrangeRed */
+}
+
+.hidden {
+    display: none !important;
+}
