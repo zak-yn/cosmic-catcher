@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Catcher!</title> <!-- Changed title -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Cosmic Catcher!</h1>
+        <canvas id="gameCanvas"></canvas>
+        <div class="info">
+            <p>Score: <span id="scoreDisplay">0</span></p>
+            <p>Lives: <span id="livesDisplay">3</span></p>
+        </div>
+        <button id="startButton">Start Game</button>
+        <div id="gameOverScreen" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartButton">Play Again?</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
